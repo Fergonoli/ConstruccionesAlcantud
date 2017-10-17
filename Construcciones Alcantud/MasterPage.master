@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1336px;
+            margin-right: 0px;
+        }
+        .style2
+        {
+            width: 95px;
+        }
+        .style3
+        {
+            width: 293px;
+        }
+        .style4
+        {
+            width: 95px;
+            height: 6px;
+        }
+        .style5
+        {
+            width: 293px;
+            height: 6px;
+        }
+        .style11
+        {
+            width: 910px;
+        }
+        .style12
+        {
+            width: 291px;
+            height: 6px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" rowspan="2">
+                    &nbsp;</td>
+                <td class="style3" rowspan="2">
+                    <asp:ImageButton ID="Image1" runat="server" ImageUrl="~/Imagenes/Logotipo.jpg" OnClick="ButtonClickInicio_Event"></asp:ImageButton>
+                </td>
+                <td colspan="2" style="text-align: center" class="style11">
+                    <asp:Label ID="Label1" runat="server" Text="www.construccionesalcantud.es"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center" class="style11">
+                    <asp:Label ID="Label2" runat="server" Font-Names="Arial Black" 
+                        Font-Size="XX-Large" Font-Strikeout="False" Font-Underline="True" 
+                        ForeColor="Red" Text="Construcciones, Reformas del hogar y locales"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                </td>
+                <td class="style5">
+                </td>
+                <td class="style12">
+                    <asp:Button ID="Button1" runat="server" Font-Names="Georgia" 
+                        Font-Size="X-Large" Height="40px" onclick="Button1_Click" 
+                        style="margin-left: 64px" Text="¿Quienes somos?" Width="230px" />
+                </td>
+                <td class="style12">
+                    <asp:Button ID="Button2" runat="server" Font-Names="Georgia" 
+                        Font-Size="X-Large" Height="40px" Text="Galeria de reformas" Width="230px" 
+                        onclick="Button2_Click" style="margin-left: 0px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style5">
+                    &nbsp;</td>
+                <td class="style12" colspan="2">
+                    <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="width: 955px">
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
